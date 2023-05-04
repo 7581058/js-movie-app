@@ -1,5 +1,4 @@
 import { Component } from '../core/core'
-import movieStore from '../store/movie'
 
 export default class TheLoader extends Component {
   render() {

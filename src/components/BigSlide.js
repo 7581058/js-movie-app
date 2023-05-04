@@ -8,7 +8,7 @@ export default class BigSlide extends Component {
     this.el.classList.add('big-slide')
 
     this.el.innerHTML = /*HTML*/ `
-      <swiper-container loop="true" autoplay-disable-on-interaction="false" autoplay-delay="2000" >
+      <swiper-container loop="true" autoplay-disable-on-interaction="false" autoplay-delay="5000" >
       </swiper-container>
     `
 

@@ -80,13 +80,12 @@ export default class Movie extends Component {
         wrap.classList.remove('hide')
 
         const ratingsWrap = this.el.querySelector('.ratings-wrap')
-        console.log('에러', movie.Ratings)
         ratingsWrap.innerHTML = `
-          ${movie.Ratings.map(rating => {
+          ${movie.Ratings?.map(rating => {
             return /*HTML*/ `
               <div class="ratings">
                 <div class="ratings-logo">
-                  <img src="./resource/${rating.Source}.png"/>
+                 
                 </div>
                 <p>${rating.Source} - ${rating.Value}</p>
               </div>
@@ -105,7 +104,8 @@ export default class Movie extends Component {
               movie.Poster === 'N/A'
                 ? `background-image:url("./resource/noimage.png"); border: 2px solid #ea23e0;`
                 : `background-image:url(${bigPoster})`
-            }  >
+            }>
+          </div>
         `
       }
 
